@@ -1,0 +1,31 @@
+{
+  "name": "google-maps-scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && cp -r atoms dist/atoms",
+    "start": "node dist/src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.8.0",
+  "dependencies": {
+    "pkg": "^5.8.1",
+    "selenium-webdriver": "^4.34.0"
+  },
+  "pkg": {
+  "assets": [
+    "bin/chrome-linux64/chrome",
+    "bin/chromedriver-linux64/chromedriver"
+  ]
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.0",
+    "@types/selenium-webdriver": "^4.1.28",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
